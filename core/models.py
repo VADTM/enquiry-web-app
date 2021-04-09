@@ -1,10 +1,10 @@
 from django.db import models
 
 # Create your models here.
-class Student(models.Model):
+class Complain(models.Model):
     issue = models.CharField(max_length = 200)
-    Solution = models.TextField()
+    solution = models.TextField()
     def __str__(self):
-        return self.name
+        return self.issue
     def show_desc(self):
-        return self.description[:50]
+        return self.solution[:50]
